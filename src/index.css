@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  /* Sampled from the Sun Mega logo and letterhead:
+       navy       -> #1c3f69
+       navy-deep  -> #141b21
+       gold       -> #ffc003
+       orange     -> #ff9c08
+       orange-deep-> #fe7a0d
+     cream is a light UI tint derived from gold. */
+  --color-navy: #1c3f69;
+  --color-navy-deep: #141b21;
+  --color-paper: #f5f3ee;
+  --color-cream: #fbead2;
+  --color-gold: #ffc003;
+  --color-orange: #ff9c08;
+  --color-orange-deep: #fe7a0d;
+  --color-slate: #5b6570;
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-navy-deep);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
