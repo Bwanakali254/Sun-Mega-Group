@@ -8,7 +8,7 @@ export default function Terms() {
     <>
       <Seo
         title={`Terms | ${site.name}`}
-        description="Terms of use for the Sun Mega Group website."
+        description="Terms of use for the Sun Mega Limited website."
         path="/terms"
       />
       <main id="main" className="mx-auto max-w-3xl px-6 pt-28 pb-24">

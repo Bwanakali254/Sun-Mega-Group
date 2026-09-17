@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <>
       <Seo
-        title="Page not found | Sun Mega Group"
+        title="Page not found | Sun Mega Limited"
         description="This page does not exist."
         path="/404"
       />
@@ -16,7 +16,7 @@ export default function NotFound() {
         </p>
         <p className="mt-8">
           <Link to="/" className="text-navy underline-offset-4 hover:underline">
-            Return to Sun Mega Group
+            Return to Sun Mega Limited
           </Link>
         </p>
       </main>

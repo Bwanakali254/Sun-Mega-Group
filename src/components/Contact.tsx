@@ -35,9 +35,9 @@ export default function Contact({
               {phone}
             </a>
           ) : null}
-          <span className="flex items-center gap-2 text-paper/85">
-            <MapPin size={18} className="text-gold" aria-hidden="true" />
-            {location}
+          <span className="flex items-start gap-2 text-paper/85">
+            <MapPin size={18} className="mt-0.5 text-gold" aria-hidden="true" />
+            <span className="whitespace-pre-line">{location}</span>
           </span>
         </div>
       </div>

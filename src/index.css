@@ -29,6 +29,16 @@ body {
   font-family: var(--font-body);
   background-color: var(--color-paper);
   color: var(--color-navy-deep);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(255, 192, 3, 0.35);
 }
 
 :focus-visible {

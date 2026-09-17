@@ -1,13 +1,13 @@
 export const glassPage = {
   name: "Glass & Interior",
-  eyebrow: "Sun Mega Group",
+  eyebrow: "Sun Mega Limited",
   headline: "Architectural glass and interior systems, specified with care.",
   intro:
-    "Glass & Interior Solutions is a Sun Mega Group business focused on architectural glass, interior glass systems, and aluminium and glass works. We design and install solutions for residential, office, and commercial interiors.",
+    "Glass & Interior Solutions is a Sun Mega Limited business focused on architectural glass, interior glass systems, and aluminium and glass works. We design and install solutions for residential, office, and commercial interiors.",
   seo: {
-    title: "Glass & Interior | Sun Mega Group",
+    title: "Glass & Interior | Sun Mega Limited",
     description:
-      "Architectural glass, partitions, frameless systems, doors, shower enclosures, railings, and custom glass interiors from Sun Mega Group.",
+      "Architectural glass, partitions, frameless systems, doors, shower enclosures, railings, and custom glass interiors from Sun Mega Limited.",
   },
   about:
     "The work is about light, proportion, and a clean finish. We specify glass systems that fit the building, then install them with a clear process from site measure through handover.",

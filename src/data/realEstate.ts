@@ -1,13 +1,13 @@
 export const realEstatePage = {
   name: "Real Estate & Property Services",
-  eyebrow: "Sun Mega Group",
+  eyebrow: "Sun Mega Limited",
   headline: "Property services handled with care and professional judgement.",
   intro:
-    "Real Estate & Property Services is a Sun Mega Group business covering residential and commercial property work: management, leasing, sales, acquisition support, and investment-focused advice.",
+    "Real Estate & Property Services is a Sun Mega Limited business covering residential and commercial property work: management, leasing, sales, acquisition support, and investment-focused advice.",
   seo: {
-    title: "Real Estate & Property Services | Sun Mega Group",
+    title: "Real Estate & Property Services | Sun Mega Limited",
     description:
-      "Residential and commercial property services from Sun Mega Group, including management, leasing, sales, and acquisition support.",
+      "Residential and commercial property services from Sun Mega Limited, including management, leasing, sales, and acquisition support.",
   },
   about:
     "The aim is reliable handling of property decisions and day-to-day management. Advice is based on the brief you give us, not on invented listings or advertised yields.",
