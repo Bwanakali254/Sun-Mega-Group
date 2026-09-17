@@ -55,22 +55,19 @@ export const businessAreas = [
     title: "Solar & Renewable Energy",
     description:
       "Placeholder content for solar and renewable energy offerings within the broader group portfolio.",
-    image:
-      "https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=900&q=80",
+    image: "/images/estate-hero.png",
   },
   {
     title: "Glass & Interior",
     description:
       "Placeholder content for design-led glass, glazing, and interior solutions across commercial and residential spaces.",
-    image:
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80",
+    image: "/images/glass-hero.png",
   },
   {
     title: "Real Estate & Property",
     description:
       "Placeholder content for property services, development, and strategic real-estate opportunities.",
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80",
+    image: "/images/estate-commercial.png",
   },
 ] as const;
 
@@ -80,24 +77,21 @@ export const projectHighlights = [
     category: "Renewable Energy",
     description:
       "Sample project placeholder for a future solar deployment, designed to be replaced with official project information.",
-    image:
-      "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/estate-hero.png",
   },
   {
     name: "Executive Interior Fit-Out",
     category: "Glass & Interior",
     description:
       "Sample placeholder project for a premium interior or glazing installation concept within the group portfolio.",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/glass-partitions.png",
   },
   {
     name: "Urban Residential Development",
     category: "Property",
     description:
       "Sample placeholder project for a future residential or property concept until authentic project details are available.",
-    image:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/estate-residential.png",
   },
 ] as const;
 

@@ -7,12 +7,9 @@ import SectionHeading from "../components/SectionHeading";
 import Seo from "../components/Seo";
 
 const companyImages: Record<string, string> = {
-  solar:
-    "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1200&q=80",
-  glass:
-    "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80",
-  "real-estate":
-    "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80",
+  solar: "/images/estate-hero.png",
+  glass: "/images/glass-hero.png",
+  "real-estate": "/images/estate-residential.png",
 };
 
 const valueIcons = [Leaf, Sparkles, BadgeCheck, TrendingUp];
@@ -62,8 +59,8 @@ export default function Home() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(20,27,33,0.25)] backdrop-blur-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
-                  alt="Corporate business team and office collaboration"
+                  src="/images/glass-hero.png"
+                  alt="Modern glass and architecture concept"
                   className="h-[540px] w-full rounded-[1.5rem] object-cover"
                 />
               </div>
@@ -80,8 +77,8 @@ export default function Home() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-cream p-3 shadow-[0_30px_80px_rgba(20,27,33,0.08)]">
                 <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
-                  alt="Professional corporate business discussion"
+                  src="/images/estate-commercial.png"
+                  alt="Commercial property and business environment"
                   className="h-[480px] w-full rounded-[1.5rem] object-cover"
                 />
               </div>
@@ -288,7 +285,7 @@ export default function Home() {
             <div className="mt-12 grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
               <article className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                  src="/images/estate-residential.png"
                   alt="Placeholder featured article"
                   className="h-80 w-full object-cover"
                 />
