@@ -1,3 +1,8 @@
+import glassHero from "../assets/glass-hero.png";
+import glassPartitions from "../assets/glass-partitions.png";
+import glassRailings from "../assets/glass-railings.png";
+import glassShower from "../assets/glass-shower.png";
+
 export const glassPage = {
   name: "Glass & Interior",
   eyebrow: "Sun Mega Limited",
@@ -95,20 +100,20 @@ export const glassPage = {
     "Photographs of completed work will be published here when the owner supplies approved images. The photographs on this page are reference imagery that illustrate the type of spaces we work with, not a published Sun Mega project gallery.",
   images: {
     hero: {
-      src: "/images/glass-hero.png",
+      src: glassHero,
       alt: "Modern office interior with floor-to-ceiling glass partitions",
     },
     gallery: [
       {
-        src: "/images/glass-partitions.png",
+        src: glassPartitions,
         alt: "Aluminium and glass office partitions in daylight",
       },
       {
-        src: "/images/glass-railings.png",
+        src: glassRailings,
         alt: "Staircase with a frameless glass balustrade",
       },
       {
-        src: "/images/glass-shower.png",
+        src: glassShower,
         alt: "Frameless glass shower enclosure in a stone bathroom",
       },
     ],

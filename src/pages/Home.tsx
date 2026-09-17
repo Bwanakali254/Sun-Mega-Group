@@ -1,5 +1,9 @@
 import { ArrowRight, BadgeCheck, BriefcaseBusiness, Building2, Leaf, Sparkles, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
+import estateCommercial from "../assets/estate-commercial.png";
+import estateHero from "../assets/estate-hero.png";
+import estateResidential from "../assets/estate-residential.png";
+import glassHero from "../assets/glass-hero.png";
 import { businesses } from "../data/businesses";
 import { businessAreas, defaultSeo, groupValues, insights, projectHighlights, site } from "../data/site";
 import ButtonLink from "../components/ButtonLink";
@@ -7,9 +11,9 @@ import SectionHeading from "../components/SectionHeading";
 import Seo from "../components/Seo";
 
 const companyImages: Record<string, string> = {
-  solar: "/images/estate-hero.png",
-  glass: "/images/glass-hero.png",
-  "real-estate": "/images/estate-residential.png",
+  solar: estateHero,
+  glass: glassHero,
+  "real-estate": estateResidential,
 };
 
 const valueIcons = [Leaf, Sparkles, BadgeCheck, TrendingUp];
@@ -59,7 +63,7 @@ export default function Home() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(20,27,33,0.25)] backdrop-blur-sm">
                 <img
-                  src="/images/glass-hero.png"
+                  src={glassHero}
                   alt="Modern glass and architecture concept"
                   className="h-[540px] w-full rounded-[1.5rem] object-cover"
                 />
@@ -77,7 +81,7 @@ export default function Home() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-cream p-3 shadow-[0_30px_80px_rgba(20,27,33,0.08)]">
                 <img
-                  src="/images/estate-commercial.png"
+                  src={estateCommercial}
                   alt="Commercial property and business environment"
                   className="h-[480px] w-full rounded-[1.5rem] object-cover"
                 />
@@ -285,7 +289,7 @@ export default function Home() {
             <div className="mt-12 grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
               <article className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
                 <img
-                  src="/images/estate-residential.png"
+                  src={estateResidential}
                   alt="Placeholder featured article"
                   className="h-80 w-full object-cover"
                 />

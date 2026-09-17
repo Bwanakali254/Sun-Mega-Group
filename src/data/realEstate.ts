@@ -1,3 +1,7 @@
+import estateHero from "../assets/estate-hero.png";
+import estateResidential from "../assets/estate-residential.png";
+import estateCommercial from "../assets/estate-commercial.png";
+
 export const realEstatePage = {
   name: "Real Estate & Property Services",
   eyebrow: "Sun Mega Limited",
@@ -61,16 +65,16 @@ export const realEstatePage = {
     "Featured properties will appear here only when the owner supplies approved listings. The photographs on this page are reference imagery of residential and commercial spaces, not live inventory.",
   images: {
     hero: {
-      src: "/images/estate-hero.png",
+      src: estateHero,
       alt: "Contemporary house exterior at sunset",
     },
     gallery: [
       {
-        src: "/images/estate-residential.png",
+        src: estateResidential,
         alt: "Bright modern residential living room",
       },
       {
-        src: "/images/estate-commercial.png",
+        src: estateCommercial,
         alt: "Mid-rise commercial office building with a glass facade",
       },
     ],

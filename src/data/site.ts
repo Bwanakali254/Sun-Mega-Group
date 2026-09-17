@@ -50,24 +50,30 @@ export const groupValues = [
   },
 ] as const;
 
+import estateHero from "../assets/estate-hero.png";
+import estateCommercial from "../assets/estate-commercial.png";
+import estateResidential from "../assets/estate-residential.png";
+import glassHero from "../assets/glass-hero.png";
+import glassPartitions from "../assets/glass-partitions.png";
+
 export const businessAreas = [
   {
     title: "Solar & Renewable Energy",
     description:
       "Placeholder content for solar and renewable energy offerings within the broader group portfolio.",
-    image: "/images/estate-hero.png",
+    image: estateHero,
   },
   {
     title: "Glass & Interior",
     description:
       "Placeholder content for design-led glass, glazing, and interior solutions across commercial and residential spaces.",
-    image: "/images/glass-hero.png",
+    image: glassHero,
   },
   {
     title: "Real Estate & Property",
     description:
       "Placeholder content for property services, development, and strategic real-estate opportunities.",
-    image: "/images/estate-commercial.png",
+    image: estateCommercial,
   },
 ] as const;
 
@@ -77,21 +83,21 @@ export const projectHighlights = [
     category: "Renewable Energy",
     description:
       "Sample project placeholder for a future solar deployment, designed to be replaced with official project information.",
-    image: "/images/estate-hero.png",
+    image: estateHero,
   },
   {
     name: "Executive Interior Fit-Out",
     category: "Glass & Interior",
     description:
       "Sample placeholder project for a premium interior or glazing installation concept within the group portfolio.",
-    image: "/images/glass-partitions.png",
+    image: glassPartitions,
   },
   {
     name: "Urban Residential Development",
     category: "Property",
     description:
       "Sample placeholder project for a future residential or property concept until authentic project details are available.",
-    image: "/images/estate-residential.png",
+    image: estateResidential,
   },
 ] as const;
 
