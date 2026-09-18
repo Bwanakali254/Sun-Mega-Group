@@ -1,17 +1,17 @@
 import { ArrowRight, BadgeCheck, BriefcaseBusiness, Building2, Leaf, Sparkles, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import estateCommercial from "../assets/estate-commercial.png";
-import estateHero from "../assets/estate-hero.png";
 import estateResidential from "../assets/estate-residential.png";
 import glassHero from "../assets/glass-hero.png";
+import solar from "../assets/solar.png";
 import { businesses } from "../data/businesses";
-import { businessAreas, defaultSeo, groupValues, insights, projectHighlights, site } from "../data/site";
+import { defaultSeo, groupValues, insights, projectHighlights, site } from "../data/site";
 import ButtonLink from "../components/ButtonLink";
 import SectionHeading from "../components/SectionHeading";
 import Seo from "../components/Seo";
 
 const companyImages: Record<string, string> = {
-  solar: estateHero,
+  solar,
   glass: glassHero,
   "real-estate": estateResidential,
 };
@@ -184,24 +184,6 @@ export default function Home() {
                   Placeholder corporate statement to define the parent-company relationship between Sun Mega Limited and its business units.
                 </p>
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-paper px-6 py-24 md:py-28">
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading eyebrow="Business Areas" title="Flexible, scalable businesses for a growing corporate group." />
-
-            <div className="mt-12 grid gap-8 lg:grid-cols-3">
-              {businessAreas.map((area) => (
-                <article key={area.title} className="overflow-hidden rounded-[1.75rem] border border-navy/10 bg-white shadow-[0_20px_50px_rgba(20,27,33,0.04)]">
-                  <img src={area.image} alt={`${area.title} placeholder`} className="h-64 w-full object-cover" />
-                  <div className="p-7">
-                    <h3 className="font-display text-2xl font-semibold text-navy-deep">{area.title}</h3>
-                    <p className="mt-4 text-sm leading-6 text-slate">{area.description}</p>
-                  </div>
-                </article>
-              ))}
             </div>
           </div>
         </section>

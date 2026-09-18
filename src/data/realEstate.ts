@@ -46,6 +46,11 @@ export const realEstatePage = {
       title: "Leasing and rentals",
       body: "Letting and rental arrangements for residential and commercial space.",
     },
+    {
+      id: "cleaning",
+      title: "Cleaning services",
+      body: "Cleaning services for residential and commercial properties.",
+    },
   ],
   approach: [
     {
