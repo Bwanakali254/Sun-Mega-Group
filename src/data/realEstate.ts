@@ -67,7 +67,7 @@ export const realEstatePage = {
     },
   ],
   listingsNote:
-    "Featured properties will appear here only when the owner supplies approved listings. The photographs on this page are reference imagery of residential and commercial spaces, not live inventory.",
+    "A selection of our featured properties.",
   images: {
     hero: {
       src: estateHero,
@@ -77,14 +77,17 @@ export const realEstatePage = {
       {
         src: estateResidential,
         alt: "Bright modern residential living room",
+        title: "Modern Residential Property",
+        description: "A light-filled residential interior with contemporary finishes and a warm, open plan layout.",
       },
       {
         src: estateCommercial,
         alt: "Mid-rise commercial office building with a glass facade",
+        title: "Commercial Office Property",
+        description: "A multi-storey commercial building with a clean glass façade and a professional office presence.",
       },
     ],
-    caption:
-      "Reference imagery illustrating residential and commercial property. Not a live listing.",
+    caption: "Featured property showcases.",
   },
   cta: {
     title: "Talk about a property brief",

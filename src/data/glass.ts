@@ -1,6 +1,6 @@
 import glassHero from "../assets/glass-hero.png";
-import glassPartitions from "../assets/glass-partitions.png";
-import glassRailings from "../assets/glass-railings.png";
+import glassPartitions from "../assets/glass-partitions.jpeg";
+import glassRailings from "../assets/glass-railings.jpeg";
 import glassShower from "../assets/glass-shower.png";
 
 export const glassPage = {
@@ -97,7 +97,7 @@ export const glassPage = {
   serviceAreas:
     "We work with homeowners, interior designers, contractors, and businesses. Specific project locations can be confirmed when you get in touch.",
   projectsNote:
-    "Photographs of completed work will be published here when the owner supplies approved images. The photographs on this page are reference imagery that illustrate the type of spaces we work with, not a published Sun Mega project gallery.",
+    "A selection of our completed Glass & Interior projects.",
   images: {
     hero: {
       src: glassHero,
@@ -107,18 +107,23 @@ export const glassPage = {
       {
         src: glassPartitions,
         alt: "Aluminium and glass office partitions in daylight",
+        title: "Aluminium and glass office partitions",
+        description: "A clean office layout with full-height glazed partitions and a bright, open feel.",
       },
       {
         src: glassRailings,
         alt: "Staircase with a frameless glass balustrade",
+        title: "Frameless glass staircase/railings",
+        description: "Minimal glazing used to create a transparent staircase edge with an uninterrupted sightline.",
       },
       {
         src: glassShower,
         alt: "Frameless glass shower enclosure in a stone bathroom",
+        title: "Frameless glass shower enclosure",
+        description: "A compact shower installation defined by clear glass, clean lines, and a refined finish.",
       },
     ],
-    caption:
-      "Reference imagery illustrating architectural glass and interiors. Not a published Sun Mega project.",
+    caption: "Completed glass and interior installations.",
   },
   cta: {
     title: "Discuss a glass or interior project",

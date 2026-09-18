@@ -88,15 +88,18 @@ export default function RealEstate() {
             <SectionHeading title="Featured properties">
               {realEstatePage.listingsNote}
             </SectionHeading>
-            <ul className="mt-10 grid gap-6 sm:grid-cols-2">
+            <ul className="mt-10 grid gap-8 sm:grid-cols-2">
               {realEstatePage.images.gallery.map((image) => (
                 <li key={image.src} className="overflow-hidden rounded-sm">
                   <FigureImage
                     src={image.src}
                     alt={image.alt}
-                    caption={realEstatePage.images.caption}
                     className="aspect-[4/3]"
                   />
+                  <div className="mt-4">
+                    <h3 className="font-display text-xl font-semibold text-navy-deep">{image.title}</h3>
+                    <p className="mt-2 text-sm leading-6 text-slate">{image.description}</p>
+                  </div>
                 </li>
               ))}
             </ul>

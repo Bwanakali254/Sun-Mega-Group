@@ -98,15 +98,18 @@ export default function GlassInterior() {
         <section id="projects" className="scroll-mt-16 border-t border-navy-deep/10 bg-paper px-6 py-24">
           <div className="mx-auto max-w-6xl">
             <SectionHeading title="Projects">{glassPage.projectsNote}</SectionHeading>
-            <ul className="mt-10 grid gap-6 sm:grid-cols-3">
+            <ul className="mt-10 grid gap-8 sm:grid-cols-3">
               {glassPage.images.gallery.map((image) => (
                 <li key={image.src} className="overflow-hidden rounded-sm">
                   <FigureImage
                     src={image.src}
                     alt={image.alt}
-                    caption={glassPage.images.caption}
                     className="aspect-[4/3]"
                   />
+                  <div className="mt-4">
+                    <h3 className="font-display text-xl font-semibold text-navy-deep">{image.title}</h3>
+                    <p className="mt-2 text-sm leading-6 text-slate">{image.description}</p>
+                  </div>
                 </li>
               ))}
             </ul>
