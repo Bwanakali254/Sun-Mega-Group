@@ -75,6 +75,35 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bg-paper px-6 py-24 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <SectionHeading
+              eyebrow="Why Sun Mega"
+              title="A group built around focused execution and long-term value."
+              align="center"
+            >
+              <p>
+                The Sun Mega Group brings together distinct businesses under one strategic platform, with a clear focus on practical delivery and sustainable growth.
+              </p>
+            </SectionHeading>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {groupValues.slice(0, 3).map((value, index) => {
+                const Icon = valueIcons[index] ?? Sparkles;
+                return (
+                  <div key={value.title} className="rounded-[1.5rem] border border-navy/10 bg-white p-7 shadow-[0_16px_40px_rgba(20,27,33,0.04)]">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cream text-navy-deep">
+                      <Icon size={20} aria-hidden="true" />
+                    </div>
+                    <h3 className="mt-6 font-display text-xl font-semibold text-navy-deep">{value.title}</h3>
+                    <p className="mt-3 text-sm leading-6 text-slate">{value.description}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         <section id="companies" className="scroll-mt-24 bg-[#f1efe9] px-6 py-24 md:py-28">
           <div className="mx-auto max-w-6xl">
             <SectionHeading
@@ -170,35 +199,6 @@ export default function Home() {
                   </div>
                 </article>
               ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-paper px-6 py-24 md:py-28">
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading
-              eyebrow="Why Sun Mega"
-              title="A group built around focused execution and long-term value."
-              align="center"
-            >
-              <p>
-                The Sun Mega Group brings together distinct businesses under one strategic platform, with a clear focus on practical delivery and sustainable growth.
-              </p>
-            </SectionHeading>
-
-            <div className="mt-12 grid gap-6 md:grid-cols-3">
-              {groupValues.slice(0, 3).map((value, index) => {
-                const Icon = valueIcons[index] ?? Sparkles;
-                return (
-                  <div key={value.title} className="rounded-[1.5rem] border border-navy/10 bg-white p-7 shadow-[0_16px_40px_rgba(20,27,33,0.04)]">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-cream text-navy-deep">
-                      <Icon size={20} aria-hidden="true" />
-                    </div>
-                    <h3 className="mt-6 font-display text-xl font-semibold text-navy-deep">{value.title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-slate">{value.description}</p>
-                  </div>
-                );
-              })}
             </div>
           </div>
         </section>
