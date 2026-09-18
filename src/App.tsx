@@ -4,6 +4,7 @@ import GlassInterior from "./pages/GlassInterior";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
+import Projects from "./pages/Projects";
 import RealEstate from "./pages/RealEstate";
 import Terms from "./pages/Terms";
 
@@ -14,6 +15,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/glass-interior" element={<GlassInterior />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/real-estate" element={<RealEstate />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />

@@ -189,13 +189,13 @@ export default function Home() {
                     <p className="text-xs font-medium uppercase tracking-[0.16em] text-orange-deep">{project.category}</p>
                     <h3 className="mt-3 font-display text-2xl font-semibold text-navy-deep">{project.name}</h3>
                     <p className="mt-4 text-sm leading-6 text-slate">{project.description}</p>
-                    <a
-                      href="#contact"
+                    <Link
+                      to="/projects"
                       className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-navy-deep hover:text-orange-deep"
                     >
                       View Project
                       <ArrowRight size={15} aria-hidden="true" />
-                    </a>
+                    </Link>
                   </div>
                 </article>
               ))}

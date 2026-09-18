@@ -1,3 +1,5 @@
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { realEstatePage } from "../data/realEstate";
 import ButtonLink from "../components/ButtonLink";
 import Contact from "../components/Contact";
@@ -99,6 +101,13 @@ export default function RealEstate() {
                   <div className="mt-4">
                     <h3 className="font-display text-xl font-semibold text-navy-deep">{image.title}</h3>
                     <p className="mt-2 text-sm leading-6 text-slate">{image.description}</p>
+                    <Link
+                      to="/projects"
+                      className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-navy-deep hover:text-orange-deep"
+                    >
+                      View Project
+                      <ArrowRight size={15} aria-hidden="true" />
+                    </Link>
                   </div>
                 </li>
               ))}
