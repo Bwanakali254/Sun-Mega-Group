@@ -1,11 +1,10 @@
-import { ArrowRight, BadgeCheck, BriefcaseBusiness, Building2, Leaf, Sparkles, TrendingUp } from "lucide-react";
+import { ArrowRight, BadgeCheck, Building2, Leaf, Sparkles, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
-import estateCommercial from "../assets/estate-commercial.png";
 import estateResidential from "../assets/estate-residential.png";
 import glassHero from "../assets/glass-hero.png";
 import solar from "../assets/solar.png";
 import { businesses } from "../data/businesses";
-import { defaultSeo, groupValues, insights, projectHighlights, site } from "../data/site";
+import { defaultSeo, groupValues, projectHighlights, site } from "../data/site";
 import ButtonLink from "../components/ButtonLink";
 import SectionHeading from "../components/SectionHeading";
 import Seo from "../components/Seo";
@@ -76,40 +75,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="scroll-mt-24 bg-paper px-6 py-24 md:py-28">
-          <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="relative">
-              <div className="overflow-hidden rounded-[2rem] border border-navy/10 bg-cream p-3 shadow-[0_30px_80px_rgba(20,27,33,0.08)]">
-                <img
-                  src={estateCommercial}
-                  alt="Commercial property and business environment"
-                  className="h-[480px] w-full rounded-[1.5rem] object-cover"
-                />
-              </div>
-              <div className="absolute -bottom-6 right-6 rounded-full border border-navy/10 bg-paper px-4 py-2 text-sm font-medium text-navy-deep shadow-sm">
-                Placeholder imagery
-              </div>
-            </div>
-
-            <div>
-              <SectionHeading
-                eyebrow="About Sun Mega Limited"
-                title="A diversified platform built for long-term opportunity."
-              >
-                <p>{site.companyIntro}</p>
-                <p className="mt-4">{site.shorterIntro}</p>
-              </SectionHeading>
-
-              <div className="mt-10 flex flex-wrap gap-4">
-                <ButtonLink to="#companies">Explore the group</ButtonLink>
-                <ButtonLink to="#contact" className="border border-navy/15 bg-transparent text-navy-deep hover:border-orange-deep hover:text-orange-deep" variant="secondary">
-                  Get in touch
-                </ButtonLink>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="companies" className="scroll-mt-24 bg-[#f1efe9] px-6 py-24 md:py-28">
           <div className="mx-auto max-w-6xl">
             <SectionHeading
@@ -170,24 +135,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-navy px-6 py-20 text-paper md:py-24">
-          <div className="mx-auto max-w-6xl">
-            <div className="rounded-[2rem] border border-white/10 bg-white/5 px-6 py-10 md:px-10 md:py-14">
-              <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
-                <div className="max-w-3xl">
-                  <p className="font-display text-sm uppercase tracking-[0.22em] text-gold">Group Positioning</p>
-                  <h2 className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-5xl">
-                    One Group. Multiple Businesses. Shared Vision.
-                  </h2>
-                </div>
-                <p className="max-w-md text-base text-paper/70">
-                  Placeholder corporate statement to define the parent-company relationship between Sun Mega Limited and its business units.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="projects" className="scroll-mt-24 bg-[#f1efe9] px-6 py-24 md:py-28">
           <div className="mx-auto max-w-6xl">
             <SectionHeading
@@ -231,16 +178,16 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <SectionHeading
               eyebrow="Why Sun Mega"
-              title="A parent company built around sustainable growth and long-term potential."
+              title="A group built around focused execution and long-term value."
               align="center"
             >
               <p>
-                The value points below are presented as placeholders for the official company narrative and positioning.
+                The Sun Mega Group brings together distinct businesses under one strategic platform, with a clear focus on practical delivery and sustainable growth.
               </p>
             </SectionHeading>
 
-            <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-              {groupValues.map((value, index) => {
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              {groupValues.slice(0, 3).map((value, index) => {
                 const Icon = valueIcons[index] ?? Sparkles;
                 return (
                   <div key={value.title} className="rounded-[1.5rem] border border-navy/10 bg-white p-7 shadow-[0_16px_40px_rgba(20,27,33,0.04)]">
@@ -252,86 +199,6 @@ export default function Home() {
                   </div>
                 );
               })}
-            </div>
-          </div>
-        </section>
-
-        <section id="insights" className="scroll-mt-24 bg-navy px-6 py-24 text-paper md:py-28">
-          <div className="mx-auto max-w-6xl">
-            <SectionHeading
-              eyebrow="News & Insights"
-              title="Corporate updates and future storylines for the group."
-              light
-            >
-              <p>
-                Sample content is included here to demonstrate the structure for future company articles, thought leadership, and business updates.
-              </p>
-            </SectionHeading>
-
-            <div className="mt-12 grid gap-8 lg:grid-cols-[1.3fr_0.7fr]">
-              <article className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5">
-                <img
-                  src={estateResidential}
-                  alt="Placeholder featured article"
-                  className="h-80 w-full object-cover"
-                />
-                <div className="p-7">
-                  <div className="flex items-center gap-3 text-xs uppercase tracking-[0.18em] text-gold">
-                    <span>Featured</span>
-                    <span className="text-paper/60">•</span>
-                    <span>{insights[0].category}</span>
-                  </div>
-                  <h3 className="mt-4 font-display text-3xl font-semibold leading-tight">{insights[0].title}</h3>
-                  <p className="mt-4 text-sm leading-6 text-paper/70">{insights[0].summary}</p>
-                  <div className="mt-6 flex items-center justify-between border-t border-white/10 pt-5 text-sm text-paper/60">
-                    <span>{insights[0].date}</span>
-                    <a href="#contact" className="inline-flex items-center gap-2 text-gold hover:text-gold/80">
-                      Read More
-                      <ArrowRight size={15} aria-hidden="true" />
-                    </a>
-                  </div>
-                </div>
-              </article>
-
-              <div className="space-y-6">
-                {insights.slice(1).map((story) => (
-                  <article key={story.title} className="rounded-[1.5rem] border border-white/10 bg-white/5 p-5">
-                    <div className="flex items-center justify-between gap-3 text-[11px] uppercase tracking-[0.16em] text-gold">
-                      <span>{story.category}</span>
-                      <span className="text-paper/50">{story.date}</span>
-                    </div>
-                    <h3 className="mt-4 font-display text-xl font-semibold text-paper">{story.title}</h3>
-                    <p className="mt-3 text-sm leading-6 text-paper/70">{story.summary}</p>
-                    <a href="#contact" className="mt-5 inline-flex items-center gap-2 text-sm font-medium text-gold hover:text-gold/80">
-                      Read More
-                      <ArrowRight size={15} aria-hidden="true" />
-                    </a>
-                  </article>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-paper px-6 py-24 md:py-28">
-          <div className="mx-auto max-w-5xl rounded-[2rem] border border-navy/10 bg-cream px-6 py-12 md:px-10">
-            <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
-              <div className="max-w-2xl">
-                <p className="font-display text-sm uppercase tracking-[0.18em] text-orange-deep">Careers</p>
-                <h2 className="mt-3 font-display text-3xl font-semibold text-navy-deep sm:text-5xl">
-                  Build Your Future With Us
-                </h2>
-                <p className="mt-4 text-base text-slate">
-                  Placeholder career messaging for future recruitment opportunities within the broader Sun Mega Limited platform.
-                </p>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-navy text-paper">
-                  <BriefcaseBusiness size={20} aria-hidden="true" />
-                </div>
-                <ButtonLink to="#contact">View Opportunities</ButtonLink>
-              </div>
             </div>
           </div>
         </section>

@@ -5,25 +5,23 @@ export const site = {
   logoAlt: "Sun Mega Limited logo",
   tagline: "Building Sustainable Opportunities for the Future",
   description:
-    "Sun Mega Limited is a diversified parent company connecting focused businesses across solar, glass and interior, and real estate with a shared vision for long-term value creation.",
+    "Sun Mega Group operates across solar, glass & interior, and real estate with a shared focus on sustainable growth and practical delivery.",
   companyIntro:
-    "Sun Mega Limited brings together complementary businesses under one strategic platform. The group model allows each venture to pursue its own focus while sharing a common vision for sustainable growth, quality, and strategic opportunity.",
+    "Sun Mega Group brings together complementary businesses under one strategic platform, with each business focused on its own area while sharing a common vision for quality and sustainable growth.",
   shorterIntro:
     "Placeholder introduction for official company information. Update this text with the approved group narrative once the client provides it.",
   copyrightName: "Sun Mega Limited",
   contact: {
     email: "support@sunmega.co.ke",
     phone: "0182348454",
-    location: "Saramala Round, 2nd Floor\n2C, Mombasa, Kenya",
+    location: "Westpark Towers, 8th Floor\nWestlands, Nairobi, Kenya",
   },
 } as const;
 
 export const navItems = [
   { label: "Home", to: "/" },
-  { label: "About Us", to: "/#about" },
   { label: "Our Companies", to: "/#companies" },
   { label: "Projects / What We Do", to: "/#projects" },
-  { label: "News / Insights", to: "/#insights" },
   { label: "Contact", to: "/#contact" },
 ] as const;
 
@@ -52,9 +50,9 @@ export const groupValues = [
 
 import estateHero from "../assets/estate-hero.png";
 import estateCommercial from "../assets/estate-commercial.png";
-import estateResidential from "../assets/estate-residential.png";
 import glassHero from "../assets/glass-hero.png";
-import glassPartitions from "../assets/glass-partitions.png";
+import glassPartitions from "../assets/glass-partitions.jpeg";
+import solarPanel from "../assets/solar-panel.jpg";
 
 export const businessAreas = [
   {
@@ -83,7 +81,7 @@ export const projectHighlights = [
     category: "Renewable Energy",
     description:
       "Sample project placeholder for a future solar deployment, designed to be replaced with official project information.",
-    image: estateHero,
+    image: solarPanel,
   },
   {
     name: "Executive Interior Fit-Out",
@@ -97,7 +95,7 @@ export const projectHighlights = [
     category: "Property",
     description:
       "Sample placeholder project for a future residential or property concept until authentic project details are available.",
-    image: estateResidential,
+    image: estateHero,
   },
 ] as const;
 
