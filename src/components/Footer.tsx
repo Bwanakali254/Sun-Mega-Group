@@ -36,22 +36,31 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-paper">Our Companies</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-paper">Our Focused Areas</p>
             <ul className="mt-4 space-y-3 text-sm">
-              {businesses.map((business) => (
-                <li key={business.id}>
-                  {business.external ? (
-                    <ExternalLink href={business.href} className="inline-flex items-center gap-1.5 hover:text-gold">
-                      {business.name}
-                      <ArrowUpRight size={14} aria-hidden="true" />
-                    </ExternalLink>
-                  ) : (
-                    <Link to={business.href} className="hover:text-gold">
-                      {business.name}
-                    </Link>
-                  )}
-                </li>
-              ))}
+              {businesses.map((business) => {
+                const label =
+                  business.name === "Glass & Interior"
+                    ? "Glass Interior"
+                    : business.name === "Real Estate & Property Services"
+                      ? "Real Estate"
+                      : business.name;
+
+                return (
+                  <li key={business.id}>
+                    {business.external ? (
+                      <ExternalLink href={business.href} className="inline-flex items-center gap-1.5 hover:text-gold">
+                        {label}
+                        <ArrowUpRight size={14} aria-hidden="true" />
+                      </ExternalLink>
+                    ) : (
+                      <Link to={business.href} className="hover:text-gold">
+                        {label}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
@@ -81,7 +90,7 @@ export default function Footer() {
           <div className="flex items-center gap-5 text-paper/60">
             <span>Sun Mega Limited</span>
             <span>Solar Solutions</span>
-            <span>Glass &amp; Interior</span>
+            <span>Glass Interior</span>
             <span>Real Estate</span>
           </div>
         </div>
