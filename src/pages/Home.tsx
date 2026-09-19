@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import estateResidential from "../assets/estate-residential.png";
 import glassHero from "../assets/glass-hero.png";
 import heroImage from "../assets/hero.png";
-import logoImage from "../assets/logo.jpeg";
 import solar from "../assets/solar.png";
 import { businesses } from "../data/businesses";
 import { defaultSeo, groupValues, projectHighlights, site } from "../data/site";
