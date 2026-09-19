@@ -47,11 +47,11 @@ export default function Home() {
               <div className="mt-12 flex flex-wrap items-center gap-6 text-sm text-paper/70">
                 <span className="inline-flex items-center gap-2">
                   <span className="h-2.5 w-2.5 rounded-full bg-gold" aria-hidden="true" />
-                  Solar
+                  Solar Solution
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <span className="h-2.5 w-2.5 rounded-full bg-gold" aria-hidden="true" />
-                  Glass & Interior
+                  Glass Interior
                 </span>
                 <span className="inline-flex items-center gap-2">
                   <span className="h-2.5 w-2.5 rounded-full bg-gold" aria-hidden="true" />
