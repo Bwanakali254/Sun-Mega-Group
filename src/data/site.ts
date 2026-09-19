@@ -3,18 +3,18 @@ export const site = {
   origin: "https://sun-mega-group.vercel.app",
   logoSrc: "/logo.svg",
   logoAlt: "Sun Mega Limited logo",
-  tagline: "Building Sustainable Opportunities for the Future",
+  tagline: "Powering spaces. Perfecting places.",
   description:
-    "Sun Mega Group operates across solar, glass & interior, and real estate with a shared focus on sustainable growth and practical delivery.",
+    "Sun Mega Limited brings together clean energy, architectural glasswork, and real estate services under one company — delivering practical solutions for the spaces you live, work, and invest in.",
   companyIntro:
-    "Sun Mega Group brings together complementary businesses under one strategic platform, with each business focused on its own area while sharing a common vision for quality and sustainable growth.",
+    "From a rooftop solar system to a complete office fit-out or a property transaction, our teams manage design, supply and installation from start to finish.",
   shorterIntro:
-    "Placeholder introduction for official company information. Update this text with the approved group narrative once the client provides it.",
+    "Sun Mega Limited brings together clean energy, architectural glasswork, and real estate services under one company — delivering practical solutions for the spaces you live, work, and invest in.",
   copyrightName: "Sun Mega Limited",
   contact: {
     email: "support@sunmega.co.ke",
-    phone: "0182348454",
-    location: "Westpark Towers, 8th Floor\nWestlands, Nairobi, Kenya",
+    phone: "+254 182 348454",
+    location: "8th Floor Westpark Towers, Westlands, Nairobi, Kenya",
   },
 } as const;
 
@@ -27,24 +27,20 @@ export const navItems = [
 
 export const groupValues = [
   {
-    title: "Sustainable Development",
-    description:
-      "Placeholder value proposition for future brand messaging around responsible growth and long-term opportunity.",
+    title: "Certified installers",
+    description: "Across all solution areas.",
   },
   {
-    title: "Innovation",
-    description:
-      "A design principle that can evolve into stronger language around systems, products, and delivery excellence.",
+    title: "One point of contact",
+    description: "For multi-service projects.",
   },
   {
-    title: "Quality",
-    description:
-      "Conceptual messaging that highlights careful execution, durable solutions, and trusted delivery standards.",
+    title: "Local expertise",
+    description: "Nationwide reach.",
   },
   {
-    title: "Long-Term Growth",
-    description:
-      "A flexible placeholder for the group’s continuing investment in business development and strategic expansion.",
+    title: "After-sales support",
+    description: "And maintenance.",
   },
 ] as const;
 
@@ -58,19 +54,19 @@ export const businessAreas = [
   {
     title: "Solar & Renewable Energy",
     description:
-      "Placeholder content for solar and renewable energy offerings within the broader group portfolio.",
+      "Clean energy solutions designed to improve efficiency, reduce operating costs, and support long-term performance.",
     image: estateHero,
   },
   {
     title: "Glass & Interior",
     description:
-      "Placeholder content for design-led glass, glazing, and interior solutions across commercial and residential spaces.",
+      "Architectural glass, interior partitions, and aluminium and glass works for homes, offices, and commercial spaces.",
     image: glassHero,
   },
   {
     title: "Real Estate & Property",
     description:
-      "Placeholder content for property services, development, and strategic real-estate opportunities.",
+      "Residential and commercial property services, including management, leasing, sales, and acquisition support.",
     image: estateCommercial,
   },
 ] as const;
@@ -80,46 +76,46 @@ export const projectHighlights = [
     name: "Commercial Solar Expansion",
     category: "Renewable Energy",
     description:
-      "Sample project placeholder for a future solar deployment, designed to be replaced with official project information.",
+      "Large-scale rooftop installation designed to improve energy resilience and reduce operating costs.",
     image: solarPanel,
   },
   {
     name: "Executive Interior Fit-Out",
     category: "Glass & Interior",
     description:
-      "Sample placeholder project for a premium interior or glazing installation concept within the group portfolio.",
+      "Premium interior and glazing solutions for modern commercial and residential environments.",
     image: glassPartitions,
   },
   {
     name: "Urban Residential Development",
     category: "Property",
     description:
-      "Sample placeholder project for a future residential or property concept until authentic project details are available.",
+      "Contemporary residential concept designed for modern living, practical layout, and long-term value.",
     image: estateHero,
   },
 ] as const;
 
 export const insights = [
   {
-    title: "Sample insight: shaping the next chapter of the group",
+    title: "Sun Mega: building practical solutions across energy, glass and property",
     category: "Group Perspective",
     date: "January 2026",
     summary:
-      "Placeholder article content for future company updates, thought leadership, and strategic insights.",
+      "A practical approach to sustainable growth, design-led execution, and service delivery across the group’s core sectors.",
   },
   {
-    title: "Sample article: opportunity, innovation, and long-term value",
+    title: "Opportunity, innovation, and long-term value",
     category: "Business Update",
     date: "February 2026",
     summary:
-      "Placeholder feature for upcoming corporate stories and business updates across the group portfolio.",
+      "A forward-looking view on how integrated service delivery creates stronger outcomes for clients and communities.",
   },
   {
-    title: "Sample article: building a stronger platform for growth",
+    title: "Building a stronger platform for growth",
     category: "Market View",
     date: "March 2026",
     summary:
-      "Placeholder content for planned company communications, market commentary, and business development updates.",
+      "A strategic look at how Sun Mega continues to shape a stronger platform for long-term business development.",
   },
 ] as const;
 

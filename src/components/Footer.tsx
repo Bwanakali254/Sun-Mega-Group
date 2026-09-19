@@ -79,9 +79,10 @@ export default function Footer() {
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} {site.copyrightName}. All rights reserved.</p>
           <div className="flex items-center gap-5 text-paper/60">
-            <span>Socials: placeholder</span>
-            <span>LinkedIn</span>
-            <span>Instagram</span>
+            <span>Sun Mega Limited</span>
+            <span>Solar Solutions</span>
+            <span>Glass &amp; Interior</span>
+            <span>Real Estate</span>
           </div>
         </div>
       </div>

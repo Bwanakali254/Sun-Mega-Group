@@ -2,6 +2,8 @@ import { ArrowRight, BadgeCheck, Building2, Leaf, Sparkles, TrendingUp } from "l
 import { Link } from "react-router-dom";
 import estateResidential from "../assets/estate-residential.png";
 import glassHero from "../assets/glass-hero.png";
+import heroImage from "../assets/hero.png";
+import logoImage from "../assets/logo.jpeg";
 import solar from "../assets/solar.png";
 import { businesses } from "../data/businesses";
 import { defaultSeo, groupValues, projectHighlights, site } from "../data/site";
@@ -62,14 +64,14 @@ export default function Home() {
             <div className="relative">
               <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-[0_30px_80px_rgba(20,27,33,0.25)] backdrop-blur-sm">
                 <img
-                  src={glassHero}
-                  alt="Modern glass and architecture concept"
+                  src={heroImage}
+                  alt="Sun Mega Limited hero image"
                   className="h-[540px] w-full rounded-[1.5rem] object-cover"
                 />
               </div>
 
               <div className="absolute -bottom-6 left-6 max-w-xs rounded-2xl border border-gold/25 bg-navy/95 px-5 py-4 shadow-[0_20px_50px_rgba(20,27,33,0.45)] backdrop-blur">
-                <p className="font-display text-lg font-semibold text-paper">One Group. Multiple Businesses. Shared Vision.</p>
+                <p className="font-display text-lg font-semibold text-paper">Everything your space needs. One trusted partner.</p>
               </div>
             </div>
           </div>
@@ -79,11 +81,11 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <SectionHeading
               eyebrow="Why Sun Mega"
-              title="A group built around focused execution and long-term value."
+              title="A group built around practical delivery and long-term value."
               align="center"
             >
               <p>
-                The Sun Mega Group brings together distinct businesses under one strategic platform, with a clear focus on practical delivery and sustainable growth.
+                Sun Mega Limited brings together clean energy, architectural glasswork, and real estate services under one company, delivering practical solutions for the spaces people live, work, and invest in.
               </p>
             </SectionHeading>
 
@@ -107,12 +109,12 @@ export default function Home() {
         <section id="companies" className="scroll-mt-24 bg-[#f1efe9] px-6 py-24 md:py-28">
           <div className="mx-auto max-w-6xl">
             <SectionHeading
-              eyebrow="Our Companies"
-              title="Three focused businesses, united under one group strategy."
+              eyebrow="Our Focused Areas"
+              title="Everything your space needs. One trusted partner."
               align="center"
             >
               <p>
-                Sun Mega Limited is designed to support multiple business lines while preserving the distinct identity of each venture.
+                Sun Mega Limited supports complementary service lines while preserving the distinct identity of each business and the value it brings to clients.
               </p>
             </SectionHeading>
 
@@ -122,7 +124,7 @@ export default function Home() {
                   <div className="relative h-64 overflow-hidden">
                     <img
                       src={companyImages[business.id]}
-                      alt={`${business.name} placeholder image`}
+                      alt={business.name}
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
@@ -168,10 +170,10 @@ export default function Home() {
           <div className="mx-auto max-w-6xl">
             <SectionHeading
               eyebrow="Projects / What We Do"
-              title="A portfolio approach designed for future project storytelling."
+              title="An integrated portfolio of practical solutions across key sectors."
             >
               <p>
-                The structure below is intentionally placeholder-driven so real project information can be added without redesigning the page.
+                From solar installations to interior fit-outs and property services, Sun Mega combines expertise across the sectors it serves.
               </p>
             </SectionHeading>
 
@@ -181,7 +183,7 @@ export default function Home() {
                   <div className="overflow-hidden">
                     <img
                       src={project.image}
-                      alt={`${project.name} placeholder project image`}
+                      alt={project.name}
                       className="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
@@ -211,7 +213,7 @@ export default function Home() {
                 Let&apos;s Build the Future Together
               </h2>
               <p className="mt-5 max-w-xl text-base text-paper/70">
-                Placeholder contact statement for future client, partnership, and business enquiries. Update this section once official contact details are supplied.
+                Sun Mega Limited brings together clean energy, architectural glasswork, and real estate services under one company — delivering practical solutions for the spaces you live, work, and invest in.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <a href={`mailto:${site.contact.email}`} className="inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-sm font-medium text-navy-deep hover:bg-orange">
@@ -247,7 +249,7 @@ export default function Home() {
                   <span className="mt-0.5 text-gold">☎</span>
                   <div>
                     <p className="text-[11px] uppercase tracking-[0.18em] text-paper/50">Phone</p>
-                    <p className="mt-1">{site.contact.phone || "Phone placeholder to be confirmed"}</p>
+                    <p className="mt-1">{site.contact.phone}</p>
                   </div>
                 </div>
               </div>
