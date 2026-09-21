@@ -1,7 +1,7 @@
 export const site = {
   name: "Sun Mega Limited",
   origin: "https://sun-mega-group.vercel.app",
-  logoSrc: "/logo.svg",
+  logoSrc: "/LOGO.svg",
   logoAlt: "Sun Mega Limited logo",
   tagline: "Powering spaces. Perfecting places.",
   description:
