@@ -1,7 +1,9 @@
+import logoSvg from "../assets/logo.svg";
+
 export const site = {
   name: "Sun Mega Limited",
   origin: "https://sun-mega-group.vercel.app",
-  logoSrc: "/LOGO.svg",
+  logoSrc: logoSvg,
   logoAlt: "Sun Mega Limited logo",
   tagline: "Powering spaces. Perfecting places.",
   description:
